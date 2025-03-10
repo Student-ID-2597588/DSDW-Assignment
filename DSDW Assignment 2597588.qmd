@@ -1,0 +1,173 @@
+---
+title: "Data Skills for the Digital World Assignment"
+author: "Student ID: 2597588"
+date: 05/10/2025
+format: 
+  html:
+    toc: true
+    css: styles.css
+    mainfont: Times New Roman
+    fontsize: 14px
+---
+
+# 1. A written summary of the aims of the study.
+
+In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time and realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
+
+This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and its prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness of non-native English accents increase from 2004 to 2019? 
+
+Two datasets will be used for this study: uk_accents_bishop_coupland and uk_accents_sharma_et_al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and they were collected in two years, meaning that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s article and discovered that Bishop and Coupland (2007) conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. However, in their research, data visualization is not straightforward (two tables are not visualized sufficiently), and the time of the data is restricted to 2004. In this case, I would like to visualize the data through a more vivid and practical approach and introduce Sharma’s data in 2019 to make a comparative analysis.
+
+```{r}
+#To justify the paragraphs
+writeLines("p { text-align: justify; }", "styles.css")
+```
+
+# 2. Analysis and presentation of the data.
+
+In this section, three graphs will be desgined to answer the research questions respectively.
+
+## 2.1 A written description motivating and methods.
+
+XXXXXXXXX
+
+### 2.2 A Scatter Plot
+
+The first research question is: is there a strong correlation between an accent’s perceived attractiveness and its prestige. The scatter plot below will answer this question and an explanation of the plot will be presented.
+
+```{r}
+library(here)
+library(tidyverse)
+library(ggplot2)
+#Load the data
+accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+accent_bc
+#Calculate the mean values
+avg_x <- mean(accent_bc$Attractiveness, na.rm = TRUE)
+avg_y <- mean(accent_bc$Prestige, na.rm = TRUE)
+
+avg_x #3.891471
+avg_y #3.466471
+#Scatter plot
+ggplot(
+  data = accent_bc, 
+  mapping = aes(x = Attractiveness, y = Prestige)
+) +
+  geom_point(color = "purple", size = 1.8) +
+  geom_point(x = avg_x, y = avg_y, color = "blue", size = 2.5, shape = 17) + 
+  geom_text(x = avg_x, y = avg_y, label = "Average", vjust = 2, color = "blue", size = 2.0) + 
+  geom_vline(xintercept = avg_x, linetype = "dashed", color = "pink", linewidth = 0.8) +
+  geom_hline(yintercept = avg_y, linetype = "dashed", color = "pink", linewidth = 0.8) +
+  theme_classic() +
+  geom_smooth(method = "lm", se = FALSE, color = "grey", alpha = 0.5, linewidth = 0.8) +
+  labs(x = "Attractiveness", y = "Prestige", subtitle = "UK Accents Coupland and Bishop 2004") +
+  ggtitle("The Correlation Between Attractiveness and Prestige")
+
+```
+Plot description: XXXXXXXXX
+
+### 2.3 A Bar Chart
+
+The bar chart below will answer the second research question: are native English accents more prestigious than non-native English accents.
+
+```{r}
+library(here)
+library(tidyverse)
+library(ggplot2)
+accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+accent_bc
+#Non-native Accents
+non_native_bc <- data.frame (
+  Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
+  Attractiveness = c(3.72, 3.21, 4.09, 3.2, 3.88),
+  Prestige = c(2.9, 2.74, 3.74, 3.21, 3.29)
+)
+non_native_bc
+accent_bc <- accent_bc |> 
+  mutate(Accent_Type = ifelse(Label %in% non_native_bc$Region, "Non-Native", "Native")) |> 
+  mutate(Accent_Type = as.factor(Accent_Type))
+accent_bc
+#Bar Chart
+ggplot(
+  data = accent_bc, 
+  mapping = aes(x = reorder(Label, Prestige, decreasing = TRUE), y = Prestige, fill = Accent_Type)
+) +
+  geom_text(aes(label = round(Prestige, 3)), hjust = -0.1, size = 2.0) +
+  geom_col() +
+  coord_flip() +
+  theme_classic() +
+  labs(x = "Accent", y = "Prestige", title = "Prestige Ratings by Accent",
+       subtitle = "UK Accent Coupland and Bishop 2004")
+
+```
+
+Chart Description: XXXXXXXX
+
+### 2.4 A Slope Graph
+
+This slope graph will investigate whether the attractiveness of non-native English accents increase from 2004 to 2019.
+
+```{r}
+library(tidyverse)
+accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+accent_bc
+accent_sha <- read_csv("datasets/uk_accents_sharma_et_al.csv")
+accent_sha
+#Non-native Accents Bishop
+non_native_bc <- data.frame (
+  Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
+  Attractiveness = c(3.72, 3.21, 4.09, 3.2, 3.88),
+  Prestige = c(2.9, 2.74, 3.74, 3.21, 3.29)
+)
+non_native_bc
+accent_bc <- accent_bc |> 
+  mutate(Accent_Type = ifelse(Label %in% non_native_bc$Region, "Non-Native", "Native")) |> 
+  mutate(Accent_Type = as.factor(Accent_Type))
+accent_bc
+#Non-native Accents Sharma
+non_native_sha <- data.frame(
+  Region = c("Afro-Caribbean", "Asian/Indian","Chinese", "French", "German", "MLE", "Spanish"),
+  Attractiveness = c(4.02, 3.54, 3.5, 4.57, 3.77, 3.89, 4.42),
+  Prestige = c(3.52, 3.38, 3.56, 4.56, 3.88, 3.81, 4.09)
+)
+non_native_sha
+#Non-native Accent Sharma
+accent_sha <- accent_sha |> 
+  mutate(Accent_Type = ifelse(Label %in% non_native_sha$Region, "Non-Native", "Native")) |> 
+  mutate(Accent_Type = as.factor(Accent_Type))
+accent_sha
+#Mutual Non-native Accent
+mutual_non_native_accent <- data.frame (
+  Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
+  Attrac_SHA = c(4.02, 3.54, 4.57, 3.77, 4.42),
+  Year_SHA = c(2019, 2019, 2019, 2019, 2019),
+  Attrac_BC = c(3.72, 3.21, 4.09, 3.2, 3.88),
+  Year_BC = c(2004, 2004, 2004, 2004, 2004)
+)
+mutual_non_native_accent
+#Long Type Data
+mutual_long <- mutual_non_native_accent |> 
+  pivot_longer(cols = c(Attrac_SHA, Attrac_BC), 
+               names_to = "Attrac_Type", 
+               values_to = "Attractiveness") |> 
+  mutate(Year = ifelse(Attrac_Type == "Attrac_SHA", 2019, 2004))
+mutual_long
+#Slope Graph
+ggplot(data = mutual_long,
+       mapping = aes(x = Year, y = Attractiveness, group = Region, color = Region)) +
+  geom_line(size = 0.6) +
+  geom_point(size = 1.5) +
+  geom_text(aes(label = round(Attractiveness, 2)), vjust = -0.8, size = 2.5) +
+  geom_text(data = mutual_long |> filter(Year == 2019), 
+            aes(label = Region), vjust = 1.5, hjust = 2.0, size = 2.5) +
+  theme_classic() +
+  labs(title = "Attractiveness of Non-native UK Accents (2004 vs. 2019)",
+       subtitle = "Mutual Data from Bishop/Coupland & Sharma et al.",
+       x = "Year", y = "Attractivenes") +
+  scale_x_continuous(breaks = c(2004, 2019)) +
+  theme(legend.position = "none")
+```
+Graph Description: XXXXXXXXX
+
+# 3. Conclusion and Reference
+
