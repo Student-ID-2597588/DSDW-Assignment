@@ -3091,11 +3091,11 @@ vertical-align: -.125em;
   <li><a href="#a-written-summary-of-the-aims-of-the-study." id="toc-a-written-summary-of-the-aims-of-the-study." class="nav-link active" data-scroll-target="#a-written-summary-of-the-aims-of-the-study.">1. A written summary of the aims of the study.</a></li>
   <li><a href="#analysis-and-presentation-of-the-data." id="toc-analysis-and-presentation-of-the-data." class="nav-link" data-scroll-target="#analysis-and-presentation-of-the-data.">2. Analysis and presentation of the data.</a>
   <ul class="collapse">
-  <li><a href="#a-written-description-motivating-and-methods." id="toc-a-written-description-motivating-and-methods." class="nav-link" data-scroll-target="#a-written-description-motivating-and-methods.">2.1 A written description motivating and methods.</a>
+  <li><a href="#a-written-description-of-motivation-and-methods." id="toc-a-written-description-of-motivation-and-methods." class="nav-link" data-scroll-target="#a-written-description-of-motivation-and-methods.">2.1 A written description of motivation and methods.</a>
   <ul class="collapse">
-  <li><a href="#a-scatter-plot" id="toc-a-scatter-plot" class="nav-link" data-scroll-target="#a-scatter-plot">2.2 A Scatter Plot</a></li>
-  <li><a href="#a-bar-chart" id="toc-a-bar-chart" class="nav-link" data-scroll-target="#a-bar-chart">2.3 A Bar Chart</a></li>
-  <li><a href="#a-slope-graph" id="toc-a-slope-graph" class="nav-link" data-scroll-target="#a-slope-graph">2.4 A Slope Graph</a></li>
+  <li><a href="#the-scatter-plot" id="toc-the-scatter-plot" class="nav-link" data-scroll-target="#the-scatter-plot">2.2 The Scatter Plot</a></li>
+  <li><a href="#the-bar-chart" id="toc-the-bar-chart" class="nav-link" data-scroll-target="#the-bar-chart">2.3 The Bar Chart</a></li>
+  <li><a href="#the-slope-graph" id="toc-the-slope-graph" class="nav-link" data-scroll-target="#the-slope-graph">2.4 The Slope Graph</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#conclusion-and-reference" id="toc-conclusion-and-reference" class="nav-link" data-scroll-target="#conclusion-and-reference">3. Conclusion and Reference</a></li>
@@ -3137,9 +3137,9 @@ vertical-align: -.125em;
 
 <section id="a-written-summary-of-the-aims-of-the-study." class="level1">
 <h1>1. A written summary of the aims of the study.</h1>
-<p>In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time and realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.</p>
+<p>In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time after realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive accent causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.</p>
 <p>This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and its prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness of non-native English accents increase from 2004 to 2019?</p>
-<p>Two datasets will be used for this study: uk_accents_bishop_coupland and uk_accents_sharma_et_al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and they were collected in two years, meaning that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s article and discovered that Bishop and Coupland (2007) conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. However, in their research, data visualization is not straightforward (two tables are not visualized sufficiently), and the time of the data is restricted to 2004. In this case, I would like to visualize the data through a more vivid and practical approach and introduce Sharma’s data in 2019 to make a comparative analysis.</p>
+<p>Two datasets will be used for this study: uk_accents_bishop_coupland and uk_accents_sharma_et_al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and since they were collected in 2004 and in 2019 respectively, it means that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s journal article (2007) and discovered that Bishop and Coupland conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. Additionally, Sharma et al. (2020) found that attitudes towards British accents remain largely unchanged from 50 years ago and the Received Pronunciation (RP) is most favored in professional context. In essence, I will build up my own research based on these findings, and I will visualize the data more vividly and practically.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#To justify the paragraphs</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">writeLines</span>(<span class="st">&quot;p { text-align: justify; }&quot;</span>, <span class="st">&quot;styles.css&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3148,11 +3148,14 @@ vertical-align: -.125em;
 <section id="analysis-and-presentation-of-the-data." class="level1">
 <h1>2. Analysis and presentation of the data.</h1>
 <p>In this section, three graphs will be desgined to answer the research questions respectively.</p>
-<section id="a-written-description-motivating-and-methods." class="level2">
-<h2 class="anchored" data-anchor-id="a-written-description-motivating-and-methods.">2.1 A written description motivating and methods.</h2>
-<p>XXXXXXXXX</p>
-<section id="a-scatter-plot" class="level3">
-<h3 class="anchored" data-anchor-id="a-scatter-plot">2.2 A Scatter Plot</h3>
+<section id="a-written-description-of-motivation-and-methods." class="level2">
+<h2 class="anchored" data-anchor-id="a-written-description-of-motivation-and-methods.">2.1 A written description of motivation and methods.</h2>
+<p>Three types of graphs—a scatter plot, a bar chart, and a slope graph—were selected to visualize the data and answer each research question.</p>
+<p>The first research question (Is there a strong correlation between an accent’s perceived attractiveness and its prestige?) relates to the correlation of two values. Based on my previous knowledge, I know that there are four main correlation types: positive linear correlation, negative linear correlation, non-linear correlation, and no correlation. A scatter plot is appropriate to represent the correlation because it allows readers to identify patterns like trends and clusters quickly. The distribution of the dots and the direction of the line of best fit can be easily observed from the plot. In general, I will select the ‘Attractiveness’ and ‘Prestige’ columns from the data and set one as my x-value and the other as my y-value. Also, the mean value will be calculated as a comparative parameter to see how many accents are beneath the average and how many are above the average.</p>
+<p>The second research question (Are native English accents more prestigious than non-native English accents?) requires comparison. Basically, I will distinguish non-native accents from native accents and fill them with different colors on the chart. A line chart and a bar chart are both available to conduct a comparison. However, after deliberation, I realized that there is no chronological relation in my data, and the only quantitative value I need is the “Prestige,” which could be my x-value. On the y-axis, I will label the name of each accent. Therefore, a bar chart should be proper.</p>
+<p>Moving to the third research question (Did the attractiveness of non-native English accents increase from 2004 to 2019?), this also requires a comparison. Still, it differs from the second one as a chronological relation can be found (from 2004 to 2019). Thus, a line chart could be ideal. Nevertheless, after filtering the data, I discovered that there are only five mutual non-native accents from the two datasets, and the gap in the chronological relation is enormous (15 years). To visualize the data more efficiently, I was inspired by a graph designed by Knaflic (2015), a slope graph. From its name, we can expect that the data will be shown as slopes. Indeed, on the x-axis, there will be only two values (2004 and 2019), and there will be five dots above each year to indicate the value of each non-native accent. Then, the two dots that pair will be connected by a line (e.g., a dot representing the ‘Attractiveness’ of French in 2004 will be linked to that in 2019). Hence, a slope graph is chosen to answer the third research question.</p>
+<section id="the-scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="the-scatter-plot">2.2 The Scatter Plot</h3>
 <p>The first research question is: is there a strong correlation between an accent’s perceived attractiveness and its prestige. The scatter plot below will answer this question and an explanation of the plot will be presented.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3240,17 +3243,40 @@ dbl (3): Attractiveness, Prestige, Year
 </figure>
 </div>
 </div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of points in each quadrant</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>quadrant_counts <span class="ot">&lt;-</span> accent_bc <span class="sc">|&gt;</span> </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Quadrant =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>      Attractiveness <span class="sc">&gt;=</span> avg_x <span class="sc">&amp;</span> Prestige <span class="sc">&gt;=</span> avg_y <span class="sc">~</span> <span class="st">&quot;Top Right&quot;</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>      Attractiveness <span class="sc">&lt;</span> avg_x <span class="sc">&amp;</span> Prestige <span class="sc">&gt;=</span> avg_y <span class="sc">~</span> <span class="st">&quot;Top Left&quot;</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>      Attractiveness <span class="sc">&lt;</span> avg_x <span class="sc">&amp;</span> Prestige <span class="sc">&lt;</span> avg_y <span class="sc">~</span> <span class="st">&quot;Bottom Left&quot;</span>,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>      Attractiveness <span class="sc">&gt;=</span> avg_x <span class="sc">&amp;</span> Prestige <span class="sc">&lt;</span> avg_y <span class="sc">~</span> <span class="st">&quot;Bottom Right&quot;</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Quadrant)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the counts</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(quadrant_counts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 2
+  Quadrant         n
+  &lt;chr&gt;        &lt;int&gt;
+1 Bottom Left     17
+2 Bottom Right     6
+3 Top Left         1
+4 Top Right       10</code></pre>
+</div>
 </div>
 <p>Plot description: XXXXXXXXX</p>
 </section>
-<section id="a-bar-chart" class="level3">
-<h3 class="anchored" data-anchor-id="a-bar-chart">2.3 A Bar Chart</h3>
+<section id="the-bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="the-bar-chart">2.3 The Bar Chart</h3>
 <p>The bar chart below will answer the second research question: are native English accents more prestigious than non-native English accents.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_bishop_coupland.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_bishop_coupland.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 34 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
@@ -3261,7 +3287,7 @@ dbl (3): Attractiveness, Prestige, Year
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 34 × 4
    Label                   Attractiveness Prestige  Year
@@ -3278,13 +3304,13 @@ dbl (3): Attractiveness, Prestige, Year
 10 Cornish                           4.22     3.38  2004
 # ℹ 24 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>non_native_bc <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">2.9</span>, <span class="fl">2.74</span>, <span class="fl">3.74</span>, <span class="fl">3.21</span>, <span class="fl">3.29</span>)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>non_native_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>non_native_bc <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">2.9</span>, <span class="fl">2.74</span>, <span class="fl">3.74</span>, <span class="fl">3.21</span>, <span class="fl">3.29</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>non_native_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          Region Attractiveness Prestige
 1 Afro-Caribbean           3.72     2.90
@@ -3293,10 +3319,10 @@ dbl (3): Attractiveness, Prestige, Year
 4         German           3.20     3.21
 5        Spanish           3.88     3.29</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> accent_bc <span class="sc">|&gt;</span> </span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_bc<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> accent_bc <span class="sc">|&gt;</span> </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_bc<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 34 × 5
    Label                   Attractiveness Prestige  Year Accent_Type
@@ -3313,17 +3339,17 @@ dbl (3): Attractiveness, Prestige, Year
 10 Cornish                           4.22     3.38  2004 Native     
 # ℹ 24 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Bar Chart</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> accent_bc, </span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Label, Prestige, <span class="at">decreasing =</span> <span class="cn">TRUE</span>), <span class="at">y =</span> Prestige, <span class="at">fill =</span> Accent_Type)</span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(Prestige, <span class="dv">3</span>)), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">2.0</span>) <span class="sc">+</span></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Accent&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Prestige&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Prestige Ratings by Accent&quot;</span>,</span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;UK Accent Coupland and Bishop 2004&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Bar Chart</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> accent_bc, </span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Label, Prestige, <span class="at">decreasing =</span> <span class="cn">TRUE</span>), <span class="at">y =</span> Prestige, <span class="at">fill =</span> Accent_Type)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(Prestige, <span class="dv">3</span>)), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">2.0</span>) <span class="sc">+</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Accent&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Prestige&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Prestige Ratings by Accent&quot;</span>,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;UK Accent Coupland and Bishop 2004&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -3334,12 +3360,12 @@ dbl (3): Attractiveness, Prestige, Year
 </div>
 <p>Chart Description: XXXXXXXX</p>
 </section>
-<section id="a-slope-graph" class="level3">
-<h3 class="anchored" data-anchor-id="a-slope-graph">2.4 A Slope Graph</h3>
+<section id="the-slope-graph" class="level3">
+<h3 class="anchored" data-anchor-id="the-slope-graph">2.4 The Slope Graph</h3>
 <p>This slope graph will investigate whether the attractiveness of non-native English accents increase from 2004 to 2019.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_bishop_coupland.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_bishop_coupland.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 34 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
@@ -3350,7 +3376,7 @@ dbl (3): Attractiveness, Prestige, Year
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 34 × 4
    Label                   Attractiveness Prestige  Year
@@ -3367,7 +3393,7 @@ dbl (3): Attractiveness, Prestige, Year
 10 Cornish                           4.22     3.38  2004
 # ℹ 24 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>accent_sha <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_sharma_et_al.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>accent_sha <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;datasets/uk_accents_sharma_et_al.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 38 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
@@ -3378,7 +3404,7 @@ dbl (3): Attractiveness, Prestige, Year
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>accent_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>accent_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 38 × 4
    Label                   Attractiveness Prestige  Year
@@ -3395,13 +3421,13 @@ dbl (3): Attractiveness, Prestige, Year
 10 Chinese                           3.5      3.56  2019
 # ℹ 28 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents Bishop</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>non_native_bc <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">2.9</span>, <span class="fl">2.74</span>, <span class="fl">3.74</span>, <span class="fl">3.21</span>, <span class="fl">3.29</span>)</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>non_native_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents Bishop</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>non_native_bc <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">2.9</span>, <span class="fl">2.74</span>, <span class="fl">3.74</span>, <span class="fl">3.21</span>, <span class="fl">3.29</span>)</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>non_native_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          Region Attractiveness Prestige
 1 Afro-Caribbean           3.72     2.90
@@ -3410,10 +3436,10 @@ dbl (3): Attractiveness, Prestige, Year
 4         German           3.20     3.21
 5        Spanish           3.88     3.29</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> accent_bc <span class="sc">|&gt;</span> </span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_bc<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> accent_bc <span class="sc">|&gt;</span> </span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_bc<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>accent_bc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 34 × 5
    Label                   Attractiveness Prestige  Year Accent_Type
@@ -3430,13 +3456,13 @@ dbl (3): Attractiveness, Prestige, Year
 10 Cornish                           4.22     3.38  2004 Native     
 # ℹ 24 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents Sharma</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>non_native_sha <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>,<span class="st">&quot;Chinese&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;MLE&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">4.02</span>, <span class="fl">3.54</span>, <span class="fl">3.5</span>, <span class="fl">4.57</span>, <span class="fl">3.77</span>, <span class="fl">3.89</span>, <span class="fl">4.42</span>),</span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">3.52</span>, <span class="fl">3.38</span>, <span class="fl">3.56</span>, <span class="fl">4.56</span>, <span class="fl">3.88</span>, <span class="fl">3.81</span>, <span class="fl">4.09</span>)</span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>non_native_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accents Sharma</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>non_native_sha <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>,<span class="st">&quot;Chinese&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;MLE&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attractiveness =</span> <span class="fu">c</span>(<span class="fl">4.02</span>, <span class="fl">3.54</span>, <span class="fl">3.5</span>, <span class="fl">4.57</span>, <span class="fl">3.77</span>, <span class="fl">3.89</span>, <span class="fl">4.42</span>),</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prestige =</span> <span class="fu">c</span>(<span class="fl">3.52</span>, <span class="fl">3.38</span>, <span class="fl">3.56</span>, <span class="fl">4.56</span>, <span class="fl">3.88</span>, <span class="fl">3.81</span>, <span class="fl">4.09</span>)</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>non_native_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          Region Attractiveness Prestige
 1 Afro-Caribbean           4.02     3.52
@@ -3447,11 +3473,11 @@ dbl (3): Attractiveness, Prestige, Year
 6            MLE           3.89     3.81
 7        Spanish           4.42     4.09</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accent Sharma</span></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>accent_sha <span class="ot">&lt;-</span> accent_sha <span class="sc">|&gt;</span> </span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_sha<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
-<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>accent_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Non-native Accent Sharma</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>accent_sha <span class="ot">&lt;-</span> accent_sha <span class="sc">|&gt;</span> </span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">ifelse</span>(Label <span class="sc">%in%</span> non_native_sha<span class="sc">$</span>Region, <span class="st">&quot;Non-Native&quot;</span>, <span class="st">&quot;Native&quot;</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Accent_Type =</span> <span class="fu">as.factor</span>(Accent_Type))</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>accent_sha</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 38 × 5
    Label                   Attractiveness Prestige  Year Accent_Type
@@ -3468,15 +3494,15 @@ dbl (3): Attractiveness, Prestige, Year
 10 Chinese                           3.5      3.56  2019 Non-Native 
 # ℹ 28 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mutual Non-native Accent</span></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>mutual_non_native_accent <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attrac_SHA =</span> <span class="fu">c</span>(<span class="fl">4.02</span>, <span class="fl">3.54</span>, <span class="fl">4.57</span>, <span class="fl">3.77</span>, <span class="fl">4.42</span>),</span>
-<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year_SHA =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>),</span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attrac_BC =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
-<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year_BC =</span> <span class="fu">c</span>(<span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>)</span>
-<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>mutual_non_native_accent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Mutual Non-native Accent</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>mutual_non_native_accent <span class="ot">&lt;-</span> <span class="fu">data.frame</span> (</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Region =</span> <span class="fu">c</span>(<span class="st">&quot;Afro-Caribbean&quot;</span>, <span class="st">&quot;Asian/Indian&quot;</span>, <span class="st">&quot;French&quot;</span>, <span class="st">&quot;German&quot;</span>, <span class="st">&quot;Spanish&quot;</span>),</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attrac_SHA =</span> <span class="fu">c</span>(<span class="fl">4.02</span>, <span class="fl">3.54</span>, <span class="fl">4.57</span>, <span class="fl">3.77</span>, <span class="fl">4.42</span>),</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year_SHA =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>, <span class="dv">2019</span>),</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Attrac_BC =</span> <span class="fu">c</span>(<span class="fl">3.72</span>, <span class="fl">3.21</span>, <span class="fl">4.09</span>, <span class="fl">3.2</span>, <span class="fl">3.88</span>),</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year_BC =</span> <span class="fu">c</span>(<span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>, <span class="dv">2004</span>)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>mutual_non_native_accent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          Region Attrac_SHA Year_SHA Attrac_BC Year_BC
 1 Afro-Caribbean       4.02     2019      3.72    2004
@@ -3485,13 +3511,13 @@ dbl (3): Attractiveness, Prestige, Year
 4         German       3.77     2019      3.20    2004
 5        Spanish       4.42     2019      3.88    2004</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Long Type Data</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>mutual_long <span class="ot">&lt;-</span> mutual_non_native_accent <span class="sc">|&gt;</span> </span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Attrac_SHA, Attrac_BC), </span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">&quot;Attrac_Type&quot;</span>, </span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">&quot;Attractiveness&quot;</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Year =</span> <span class="fu">ifelse</span>(Attrac_Type <span class="sc">==</span> <span class="st">&quot;Attrac_SHA&quot;</span>, <span class="dv">2019</span>, <span class="dv">2004</span>))</span>
-<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>mutual_long</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Long Type Data</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>mutual_long <span class="ot">&lt;-</span> mutual_non_native_accent <span class="sc">|&gt;</span> </span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Attrac_SHA, Attrac_BC), </span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">&quot;Attrac_Type&quot;</span>, </span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">&quot;Attractiveness&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Year =</span> <span class="fu">ifelse</span>(Attrac_Type <span class="sc">==</span> <span class="st">&quot;Attrac_SHA&quot;</span>, <span class="dv">2019</span>, <span class="dv">2004</span>))</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>mutual_long</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 6
    Region         Year_SHA Year_BC Attrac_Type Attractiveness  Year
@@ -3507,20 +3533,20 @@ dbl (3): Attractiveness, Prestige, Year
  9 Spanish            2019    2004 Attrac_SHA            4.42  2019
 10 Spanish            2019    2004 Attrac_BC             3.88  2004</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Slope Graph</span></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mutual_long,</span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Attractiveness, <span class="at">group =</span> Region, <span class="at">color =</span> Region)) <span class="sc">+</span></span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
-<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(Attractiveness, <span class="dv">2</span>)), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> mutual_long <span class="sc">|&gt;</span> <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2019</span>), </span>
-<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">label =</span> Region), <span class="at">vjust =</span> <span class="fl">1.5</span>, <span class="at">hjust =</span> <span class="fl">2.0</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Attractiveness of Non-native UK Accents (2004 vs. 2019)&quot;</span>,</span>
-<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;Mutual Data from Bishop/Coupland &amp; Sharma et al.&quot;</span>,</span>
-<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Attractivenes&quot;</span>) <span class="sc">+</span></span>
-<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">2004</span>, <span class="dv">2019</span>)) <span class="sc">+</span></span>
-<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Slope Graph</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mutual_long,</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Attractiveness, <span class="at">group =</span> Region, <span class="at">color =</span> Region)) <span class="sc">+</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">round</span>(Attractiveness, <span class="dv">2</span>)), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data =</span> mutual_long <span class="sc">|&gt;</span> <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2019</span>), </span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>            <span class="fu">aes</span>(<span class="at">label =</span> Region), <span class="at">vjust =</span> <span class="fl">1.5</span>, <span class="at">hjust =</span> <span class="fl">2.0</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Attractiveness of Non-native UK Accents (2004 vs. 2019)&quot;</span>,</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;Mutual Data from Bishop/Coupland &amp; Sharma et al.&quot;</span>,</span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Attractivenes&quot;</span>) <span class="sc">+</span></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">2004</span>, <span class="dv">2019</span>)) <span class="sc">+</span></span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
