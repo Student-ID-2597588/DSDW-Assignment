@@ -1,39 +1,55 @@
 ---
-title: "Data Skills for the Digital World Assignment"
-author: "Student ID: 2597588"
-date: 05/10/2025
-format: 
-  html:
-    toc: true
-    css: styles.css
-    mainfont: Times New Roman
-    fontsize: 14px
+  title: "Data Skills for the Digital World Assignment"  
+  author: "Student ID: 2597588"  
+  date: 05/10/2025  
+  format:
+    html:
+      code-background: true
+      embed-resources: true
+      toc: true
+      css: styles.css
+      mainfont: "Times New Roman"
+      fontsize: "18px"
 ---
+
+<style>
+  p {
+    text-indent: 2em; /* Adjust the indent size (e.g., 1em = ~2 spaces) */
+  }
+</style>
+
 
 # 1. A written summary of the aims of the study.
 
-In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time and realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
+In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time after realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive accent causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
 
 This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and its prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness of non-native English accents increase from 2004 to 2019? 
 
-Two datasets will be used for this study: uk_accents_bishop_coupland and uk_accents_sharma_et_al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and they were collected in two years, meaning that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s article and discovered that Bishop and Coupland (2007) conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. However, in their research, data visualization is not straightforward (two tables are not visualized sufficiently), and the time of the data is restricted to 2004. In this case, I would like to visualize the data through a more vivid and practical approach and introduce Sharma’s data in 2019 to make a comparative analysis.
+Two datasets will be used for this study: uk accents bishop coupland and uk accents sharma et al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and since they were collected in 2004 and in 2019 respectively, it means that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s journal article (2007) and discovered that Bishop and Coupland conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. Additionally, Sharma et al. (2020) found that attitudes towards British accents remain largely unchanged from 50 years ago and the Received Pronunciation (RP) is most favored in professional context. In essence, I will build up my own research based on these findings, and I will visualize the data more vividly and practically.
+
 
 ```{r}
 #To justify the paragraphs
 writeLines("p { text-align: justify; }", "styles.css")
 ```
 
+
 # 2. Analysis and presentation of the data.
 
-In this section, three graphs will be desgined to answer the research questions respectively.
 
-## 2.1 A written description motivating and methods.
+## 2.1 A written description of motivation and methods.
 
-XXXXXXXXX
+Three types of graphs—a scatter plot, a bar chart, and a slope graph—were selected to visualize the data and answer each research question. 
 
-### 2.2 A Scatter Plot
+The first research question (Is there a strong correlation between an accent’s perceived attractiveness and its prestige?) relates to the correlation of two values. Based on my previous knowledge, I know that there are four main correlation types: positive linear correlation, negative linear correlation, non-linear correlation, and no correlation. A scatter plot is appropriate to represent the correlation because it allows readers to identify patterns like trends and clusters quickly. The distribution of the dots and the direction of the line of best fit can be easily observed from the plot. In general, I will select the ‘Attractiveness’ and ‘Prestige’ columns from the data and set one as my x-value and the other as my y-value. Also, the mean value will be calculated as a comparative parameter to see how many accents are beneath the average and how many are above the average.
 
-The first research question is: is there a strong correlation between an accent’s perceived attractiveness and its prestige. The scatter plot below will answer this question and an explanation of the plot will be presented.
+The second research question (Are native English accents more prestigious than non-native English accents?) requires comparison. Basically, I will distinguish non-native accents from native accents and fill them with different colors on the chart. A line chart and a bar chart are both available to conduct a comparison. However, after deliberation, I realized that there is no chronological relation in my data, and the only quantitative value I need is the “Prestige,” which could be my x-value. On the y-axis, I will label the name of each accent. Therefore, a bar chart should be proper. 
+
+Moving to the third research question (Did the attractiveness of non-native English accents increase from 2004 to 2019?), this also requires a comparison. Still, it differs from the second one as a chronological relation can be found (from 2004 to 2019). Thus, a line chart could be ideal. Nevertheless, after filtering the data, I discovered that there are only five mutual non-native accents from the two datasets, and the gap in the chronological relation is enormous (15 years). To visualize the data more efficiently, I was inspired by a graph designed by Knaflic (2015), a slope graph. From its name, we can expect that the data will be shown as slopes. Indeed, on the x-axis, there will be only two values (2004 and 2019), and there will be five dots above each year to indicate the value of each non-native accent. Then, the two dots that pair will be connected by a line (e.g., a dot representing the ‘Attractiveness’ of French in 2004 will be linked to that in 2019). Hence, a slope graph is chosen to answer the third research question.
+
+## 2.2 The Scatter Plot
+
+The first research question is: Is there a strong correlation between an accent’s perceived attractiveness and its prestige. The scatter plot below will answer this question and an explanation of the plot will be presented.
 
 ```{r}
 library(here)
@@ -63,12 +79,26 @@ ggplot(
   labs(x = "Attractiveness", y = "Prestige", subtitle = "UK Accents Coupland and Bishop 2004") +
   ggtitle("The Correlation Between Attractiveness and Prestige")
 
+# Count the number of points in each quadrant
+quadrant_counts <- accent_bc |> 
+  mutate(
+    Quadrant = case_when(
+      Attractiveness >= avg_x & Prestige >= avg_y ~ "Top Right",
+      Attractiveness < avg_x & Prestige >= avg_y ~ "Top Left",
+      Attractiveness < avg_x & Prestige < avg_y ~ "Bottom Left",
+      Attractiveness >= avg_x & Prestige < avg_y ~ "Bottom Right"
+    )
+  ) |> 
+  count(Quadrant)
+
+# Print the counts
+print(quadrant_counts)
 ```
-Plot description: XXXXXXXXX
+The dots show a positive correlation (as the value of attractiveness increases, the value of prestige rises as well). The horizontal and vertical lines divide the plot into four quadrants, and we can discover that most of the dots are assembled in the bottom left quadrant, meaning that these accents are below the average attractiveness and prestige.
 
-### 2.3 A Bar Chart
+## 2.3 The Bar Chart
 
-The bar chart below will answer the second research question: are native English accents more prestigious than non-native English accents.
+The bar chart below will answer the second research question: Are native English accents more prestigious than non-native English accents.
 
 ```{r}
 library(here)
@@ -76,6 +106,7 @@ library(tidyverse)
 library(ggplot2)
 accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
 accent_bc
+
 #Non-native Accents
 non_native_bc <- data.frame (
   Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
@@ -83,13 +114,28 @@ non_native_bc <- data.frame (
   Prestige = c(2.9, 2.74, 3.74, 3.21, 3.29)
 )
 non_native_bc
-accent_bc <- accent_bc |> 
+
+#Re-Label the data frame
+new_accent_bc <- accent_bc |> 
   mutate(Accent_Type = ifelse(Label %in% non_native_bc$Region, "Non-Native", "Native")) |> 
   mutate(Accent_Type = as.factor(Accent_Type))
-accent_bc
+new_accent_bc
+
+#Add the mean value row
+mean_prestige <- mean(accent_bc$Prestige, na.rm = TRUE)
+mean_prestige
+
+mean_attractiveness <- mean(accent_bc$Attractiveness, na.rm = TRUE)
+mean_attractiveness
+
+#Final data frame
+add_row_bc <- new_accent_bc |> 
+  add_row(Label = "Mean_Value", Attractiveness = mean_attractiveness, Prestige = mean_prestige)
+add_row_bc
+
 #Bar Chart
 ggplot(
-  data = accent_bc, 
+  data = add_row_bc, 
   mapping = aes(x = reorder(Label, Prestige, decreasing = TRUE), y = Prestige, fill = Accent_Type)
 ) +
   geom_text(aes(label = round(Prestige, 3)), hjust = -0.1, size = 2.0) +
@@ -101,9 +147,9 @@ ggplot(
 
 ```
 
-Chart Description: XXXXXXXX
+According to the chart, four accents (Asian/Indian, Afro-Caribbean, German, and Spanish) fall below the mean prestige value, while the French accent is slightly above it. Therefore, it can be concluded that most native English accents hold more prestige than the Asian/Indian and Afro-Caribbean accents, with the French accent being relatively high in prestige compared to the others.
 
-### 2.4 A Slope Graph
+## 2.4 The Slope Graph
 
 This slope graph will investigate whether the attractiveness of non-native English accents increase from 2004 to 2019.
 
@@ -155,19 +201,55 @@ mutual_long
 #Slope Graph
 ggplot(data = mutual_long,
        mapping = aes(x = Year, y = Attractiveness, group = Region, color = Region)) +
-  geom_line(size = 0.6) +
+  geom_line(linewidth = 0.6) +
   geom_point(size = 1.5) +
   geom_text(aes(label = round(Attractiveness, 2)), vjust = -0.8, size = 2.5) +
   geom_text(data = mutual_long |> filter(Year == 2019), 
             aes(label = Region), vjust = 1.5, hjust = 2.0, size = 2.5) +
   theme_classic() +
   labs(title = "Attractiveness of Non-native UK Accents (2004 vs. 2019)",
-       subtitle = "Mutual Data from Bishop/Coupland & Sharma et al.",
+       subtitle = "Mutual Data from Bishop & Coupland and Sharma et al.",
        x = "Year", y = "Attractivenes") +
   scale_x_continuous(breaks = c(2004, 2019)) +
   theme(legend.position = "none")
-```
-Graph Description: XXXXXXXXX
 
-# 3. Conclusion and Reference
+# Calculate the slope for each accent
+check_non_native_accent <- mutual_non_native_accent|> 
+  mutate(Slope = Attrac_SHA - Attrac_BC)
+
+#Find the accent with the slightest slope
+slightest_slope <- check_non_native_accent |> 
+  filter(Slope == min(Slope))
+slightest_slope
+
+# Find the accent with the steepest slope
+steepest_slope <- check_non_native_accent |> 
+  filter(Slope == max(Slope))
+steepest_slope
+```
+After glancing at the graph, there is no doubt that the attractiveness of the five non-native accents increased from 2004 to 2019. Also, the value of the German accent experienced the steepest change from 3.2 to 3.77. However, the attractiveness of the Afro-Caribbean accent did not rise considerably, and it moved from 3.72 to 4.02.
+
+
+# 3. Reference
+
+## 3.1 Reference
+```{r}
+#Indented Reference List
+ref1 <- paste("Coupland, N. and Bishop, H. (2007) ‘Ideologised values for British accents1’,",
+              "\n\tJournal of Sociolinguistics, 11(1), pp. 74–93. Available at:",
+              "\n\thttps://doi.org/10.1111/j.1467-9841.2007.00311.x.")
+
+ref2 <- paste("Nussbaumer Knaflic, C. (2015) Storytelling with data: a data visualization guide for",
+              "\n\tbusiness professionals. Hoboken, New Jersey: Wiley. Available at:",
+              "\n\thttps://doi.org/10.1002/9781119055259.")
+
+ref3 <- paste("Sharma, D. et al. (2020) Accent Bias in Britain: Attitudes to Accents in Britain and",
+              "\n\tImplications for Fair Access. Queen Mary University of London & University of York.",
+              "\n\tAvailable at: https://accentbiasbritain.org/ (Accessed: 13 March 2025).")
+
+cat(ref1, "\n\n", ref2, "\n\n", ref3)
+
+```
+
+
 
