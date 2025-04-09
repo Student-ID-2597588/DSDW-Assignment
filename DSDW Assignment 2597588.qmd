@@ -338,7 +338,7 @@ In summary, I discovered that:
 
 ## 3.2 Reference List
 ```{r}
-#Indented Reference List
+# Indented Reference List
 ref1 <- paste("Coupland, N. and Bishop, H. (2007) ‘Ideologised values for British accents1’,",
               "\n\tJournal of Sociolinguistics, 11(1), pp. 74–93. Available at:",
               "\n\thttps://doi.org/10.1111/j.1467-9841.2007.00311.x.")
