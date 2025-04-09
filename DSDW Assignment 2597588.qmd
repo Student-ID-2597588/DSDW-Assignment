@@ -8,6 +8,8 @@
       code-background: true
       embed-resources: true
       toc: true
+      toc-location: left
+      df-print: paged
       css: test.css
       mainfont: "Times New Roman"
       fontsize: "18px"
@@ -17,58 +19,81 @@
 
 ## 1.1 The aim of the study
 
-In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a strong Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time after realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, I predict that it is my less attractive accent causing this issue. In this case, I would like to conduct research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
+In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time after realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, it is likely my less attractive accent is causing this issue. In this case, I would like to research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
 
-This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and its prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness of non-native English accents increase from 2004 to 2019? 
+This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness and prestige of non-native English accents both increase from 2004 to 2019? 
 
-Two datasets will be used for this study: uk accents bishop coupland and uk accents sharma et al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 different accents, the latter covers 38 different accents and most of the accents are overlapped in both datasets. I selected these two datasets because they share the vast majority of the accents, and since they were collected in 2004 and in 2019 respectively, it means that there could be changes in the pattern of data that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s journal article (2007) and discovered that Bishop and Coupland conducted research on UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. Additionally, Sharma et al. (2020) found that attitudes towards British accents remain largely unchanged from 50 years ago and the Received Pronunciation (RP) is most favored in professional context. In essence, I will build up my own research based on these findings, and I will visualize the data more vividly and practically.
-
+This study will use two datasets: UK accents bishop Coupland and UK accents Sharma et al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 and 38 different accents, and most are overlapped in both datasets. I selected these two datasets because they share most of the accents. Since they were collected in 2004 and 2019, there could be changes in the data pattern that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s journal article (2007). I discovered that Bishop and Coupland researched UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. Additionally, Sharma et al. (2020) found that attitudes towards British accents remain unchanged from 50 years ago, and Received Pronunciation (RP) is most favored in a professional context. Based on these findings, I will build up my research and visualize the data more vividly and practically.
 
 # 2. Analysis and presentation of the data.
 
 ## 2.1 A written description of motivation and methods.
 
-Three types of graphs—a scatter plot, a bar chart, and a slope graph—were selected to visualize the data and answer each research question. 
+Four graphs—a scatter plot, a bar chart, a pie chart, and a slope graph—were selected for data visualization. 
 
-The first research question (Is there a strong correlation between an accent’s perceived attractiveness and its prestige?) relates to the correlation of two values. Based on my previous knowledge, I know that there are four main correlation types: positive linear correlation, negative linear correlation, non-linear correlation, and no correlation. A scatter plot is appropriate to represent the correlation because it allows readers to identify patterns like trends and clusters quickly. The distribution of the dots and the direction of the line of best fit can be easily observed from the plot. In general, I will select the ‘Attractiveness’ and ‘Prestige’ columns from the data and set one as my x-value and the other as my y-value. Also, the mean value will be calculated as a comparative parameter to see how many accents are beneath the average and how many are above the average.
+The first research question relates to the correlation between attractiveness and prestige. Based on my previous knowledge, I know that there are four main correlation types: positive linear correlation, negative linear correlation, non-linear correlation, and no correlation. A scatter plot is appropriate to represent the correlation because it allows readers to identify patterns like trends and clusters quickly. The distribution of the dots and the direction of the line of best fit can be easily observed from the plot. I will generally select the ‘Attractiveness’ and ‘Prestige’ columns from the data and set one as my x-value and the other as my y-value. Also, the mean value will be calculated as a comparative parameter to see how many accents are beneath the average and how many are above the average.
 
-The second research question is: Are native English accents more prestigious than non-native English accents? 
-This requires me to compare the Accent Type (Native or Non-native). Basically, I will distinguish non-native accents from native accents and fill them with different colors on the chart. A line chart and a bar chart are both available to conduct a comparison. However, after deliberation, I realized that there is no chronological relation in my data, and the only quantitative value I need is the “Prestige,” which could be my x-value. On the y-axis, I will label the name of each accent. Therefore, a bar chart should be proper. 
+The second research question is: Are native English accents more prestigious than non-native English accents? This requires me to compare the Accent Type (Native or Non-native). I will filter non-native accents from native accents and fill them with different colors on the chart. A line chart and a bar chart are available to compare. However, after deliberation, I realized that there is no chronological relation in my data, and the only quantitative value I need is the “Prestige,” which could be my x-value. On the y-axis, I will label the name of each accent. Therefore, a bar chart should be proper. Apart from the bar chart, a pie chart will illustrate the proportion of the accents rated above or below the mean Prestige.
 
-Moving to the third research question: Did the attractiveness of non-native English accents increase from 2004 to 2019? Still, a comparison is also required here. However, it differs from the second one as a chronological relation can be found (from 2004 to 2019). Thus, a line chart could be ideal. Nevertheless, after filtering the data, I discovered that there are only five mutual non-native accents from the two datasets, and the gap in the chronological relation is enormous (15 years). To visualize the data more efficiently, I was inspired by a graph designed by Knaflic (2015), a slope graph. From its name, we can expect that the data will be shown as slopes. Indeed, on the x-axis, there will be only two values (2004 and 2019), and there will be five dots above each year to indicate the value of each non-native accent. Then, the two dots that pair will be connected by a line (e.g., a dot representing the ‘Attractiveness’ of French in 2004 will be linked to that in 2019). Hence, a slope graph is chosen to answer the third research question.
+Moving to the third research question: Did the attractiveness and prestige of non-native English accents both increase from 2004 to 2019? Still, a comparison is also required here. However, it differs from the second one as a chronological relation can be found (from 2004 to 2019). Thus, a line chart could be ideal. Nevertheless, after filtering the data, I discovered that there are only five mutual non-native accents from the two datasets, and the gap in the chronological relation is enormous (15 years). To visualize the data more efficiently, I was inspired by Knaflic (2015), who suggested designing a slope graph. We expect the data to be shown as slopes from its name. Indeed, on the x-axis, there will be only two values (2004 and 2019), and there will be ten dots above each year to indicate the value of each non-native accent. Then, the two dots that pair will be connected by a line (e.g., a dot representing the ‘Attractiveness’ of French in 2004 will be linked to that in 2019). Hence, a slope graph is chosen to answer the third research question.
 
 ## 2.2 The Scatter Plot
 
-The first research question is: Is there a strong correlation between an accent’s perceived attractiveness and its prestige. The scatter plot below will answer this question and an explanation of the plot will be presented.
+The first research question is: Is there a strong correlation between an accent’s perceived attractiveness and prestige? The scatter plot below will answer this question, and an explanation of the plot will be presented.
 
 ```{r}
+#Load the Library
 library(here)
 library(tidyverse)
 library(ggplot2)
+```
+
+```{r}
 #Load the data
-accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+accent_bc <- read_csv("/Users/vinnyhe/Desktop/R_Language/Vinny's_Data_Skills_Working_Project/datasets/uk_accents_bishop_coupland.csv")
 accent_bc
+```
+
+```{r}
 #Calculate the mean values
 avg_x <- mean(accent_bc$Attractiveness, na.rm = TRUE)
 avg_y <- mean(accent_bc$Prestige, na.rm = TRUE)
 
 avg_x #3.891471
 avg_y #3.466471
+```
+
+```{r}
+#Set quadrants
+accent_bc$quadrant <- ifelse(accent_bc$Attractiveness > avg_x & accent_bc$Prestige > avg_y, "I",
+                      ifelse(accent_bc$Attractiveness < avg_x & accent_bc$Prestige > avg_y, "II",
+                      ifelse(accent_bc$Attractiveness < avg_x & accent_bc$Prestige < avg_y, "III", "IV")))
+
+accent_bc$quadrant <- as.factor(accent_bc$quadrant)
+```
+
+```{r}
+#| message: FALSE
+#| warning: FALSE
 #Scatter plot
 ggplot(
   data = accent_bc, 
-  mapping = aes(x = Attractiveness, y = Prestige)
+  mapping = aes(x = Attractiveness, y = Prestige, color = quadrant)
 ) +
-  geom_point(color = "purple", size = 2.0) +
-  geom_point(x = avg_x, y = avg_y, color = "blue", size = 2.5, shape = 17) + 
-  geom_text(x = avg_x, y = avg_y, label = "Average", vjust = 2, color = "blue", size = 2.5) + 
-  geom_vline(xintercept = avg_x, linetype = "dashed", color = "pink", linewidth = 0.8) +
-  geom_hline(yintercept = avg_y, linetype = "dashed", color = "pink", linewidth = 0.8) +
+  geom_point(size = 2.0) +
+  geom_vline(xintercept = avg_x, linetype = "dashed", color = "pink", linewidth = 0.9) +
+  geom_hline(yintercept = avg_y, linetype = "dashed", color = "pink", linewidth = 0.9) +
   theme_classic() +
-  geom_smooth(method = "lm", se = FALSE, color = "grey", alpha = 0.5, linewidth = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, color = "#666666", alpha = 0.5, linewidth = 0.8) +
   labs(x = "Attractiveness", y = "Prestige", subtitle = "UK Accents Coupland and Bishop 2004") +
-  ggtitle("The Correlation Between Attractiveness and Prestige")
+  ggtitle("The Correlation Between Attractiveness and Prestige") +
+  scale_color_manual(values = c("I" = "#FF0066", "II" = "#009999", "III" = "#999900", "IV" = "#9900FF")) +
+  theme(legend.position = "none") +
+  annotate("text", x = 3.4, y = 5.0, label = "The distribution of dots shows a positive correlation.", 
+           color = "black", size = 3.2, hjust = 0.55)
+```
 
+```{r}
 # Count the number of points in each quadrant
 quadrant_counts <- accent_bc |> 
   mutate(
@@ -84,84 +109,106 @@ quadrant_counts
 ```
 
 #### Plot Description:
-The dots show a positive correlation (as the value of attractiveness increases, the value of prestige rises as well). The horizontal and vertical lines divide the plot into four quadrants, and we can discover that most of the dots are assembled in the bottom left quadrant, meaning that these accents are below the average attractiveness and prestige.
+The dots illustrate a positive correlation: as the level of attractiveness increases, prestige also rises. The horizontal and vertical lines divide the plot into four quadrants, with the dots colored differently in each quadrant. There are 10 dots in Quadrant I, one in Quadrant II, 17 in Quadrant III, and six in Quadrant IV. I did this because it is easier for readers to visualize the distribution of dots in each quadrant. The distribution pattern could also inspire a new study on why most dots cluster in Quadrants I and III.
 
 ## 2.3 The Bar Chart and Pie Chart
 
-The bar chart below will answer the second research question: Are native English accents more prestigious than non-native English accents. 
-
-Apart from dealing with the second research question, a pie chart will be presented to further indicate the proportion of the accents that are rated above or below the mean (3.466). 
+The bar chart below will answer the second research question: Are native English accents more prestigious than non-native English accents? In addition, a pie chart will indicate the proportion of the accents rated above or below the mean (3.466). 
 
 ```{r}
-library(here)
-library(tidyverse)
-library(ggplot2)
-accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+# Load the Data
+accent_bc <- read_csv("/Users/vinnyhe/Desktop/R_Language/Vinny's_Data_Skills_Working_Project/datasets/uk_accents_bishop_coupland.csv")
 accent_bc
+```
 
-#Non-native Accents
+```{r}
+# Non-native Accents
 non_native_bc <- data.frame (
   Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
   Attractiveness = c(3.72, 3.21, 4.09, 3.2, 3.88),
   Prestige = c(2.9, 2.74, 3.74, 3.21, 3.29)
 )
 non_native_bc
+```
 
-#Re-Label the data frame
+```{r}
+# Re-Label the data frame
 new_accent_bc <- accent_bc |> 
   mutate(Accent_Type = ifelse(Label %in% non_native_bc$Region, "Non-Native", "Native")) |> 
   mutate(Accent_Type = as.factor(Accent_Type))
-new_accent_bc #Here ChatGPT helped me sort the data to label them as "Native" or "Non-Native". The "ifelse" function is the hint from ChatGPT. This function tests the condition and labels the data from non_accent_bc as "Non-native" and any ohter data as "Native".
+new_accent_bc 
+```
 
-#Add the mean value row
-mean_prestige <- mean(accent_bc$Prestige, na.rm = TRUE)
-mean_prestige
-
-mean_attractiveness <- mean(accent_bc$Attractiveness, na.rm = TRUE)
-mean_attractiveness
-
-#Final data frame
-add_row_bc <- new_accent_bc |> 
-  add_row(Label = "MEAN_VALUE", Attractiveness = mean_attractiveness, Prestige = mean_prestige)
-add_row_bc
-
-#Bar Chart
+```{r}
+# Bar Chart
 ggplot(
-  data = add_row_bc, 
-  mapping = aes(x = reorder(Label, Prestige, decreasing = TRUE), y = Prestige, fill = Accent_Type)
-) +
-  geom_text(aes(label = round(Prestige, 3)), hjust = -0.1, size = 2.0) +
+  data = new_accent_bc, 
+  mapping = aes(x = reorder(Label, Prestige, increasing = TRUE), y = Prestige, fill = Accent_Type, x_nudge = -10)) +
+  geom_text(aes(label = round(Prestige, 3)), hjust = - 0.1, size = 3.5) +
   geom_col() +
   coord_flip() +
   theme_classic() +
-  labs(x = "Accent", y = "Prestige", title = "Prestige Ratings by Accent",
+  labs(x = " ", y = " ", title = "Prestige Ratings by Accent",
        subtitle = "UK Accent Coupland and Bishop 2004") +
-  theme(legend.position = "none") +
-  scale_fill_manual(values = c("lightblue", "pink"))
-  
+  theme(legend.position = "none",
+        axis.line.y = element_blank(), axis.line.x = element_blank(), axis.ticks = element_blank()) +
+  scale_fill_manual(values = c("skyblue", "#CC99CC")) +
+  scale_y_continuous(breaks = seq(0, 5, by = 1))
 
 ```
 
+```{r}
+# Native Accent_BC
+native_bc <- new_accent_bc |> 
+  filter(Accent_Type == "Native")
+native_bc
+# Count Prestige Rating > 3.74 (French Accent)
+prestige_bigger_than_3.74 <- native_bc |>
+  count(Prestige > 3.74)
+prestige_bigger_than_3.74
+
+# Count Prestige Rating > 3.29 (Spanish Accent)
+prestige_bigger_than_3.29 <- native_bc |>
+  count(Prestige > 3.29)
+prestige_bigger_than_3.29
+
+# Count Prestige Rating > 3.21 (German Accent)
+prestige_bigger_than_3.21 <- native_bc |>
+  count(Prestige > 3.21)
+prestige_bigger_than_3.21
+
+# Count Prestige < 2.9 (Afro-Caribbean)
+prestige_smaller_than_2.9 <- native_bc |>
+  count(Prestige < 2.9)
+prestige_smaller_than_2.9
+```
+
 #### Bar Chart Description:
-According to the chart, four accents (Asian/Indian, Afro-Caribbean, German, and Spanish) fall below the mean prestige value, while the French accent is slightly above it. Therefore, it can be concluded that most native English accents hold more prestige than the Asian/Indian and Afro-Caribbean accents, with the French accent being relatively high in prestige compared to the others.
+According to the bar chart, it can be concluded that most native English accents hold more prestige than the Asian/Indian and Afro-Caribbean accents, with the French accent being relatively high in prestige compared to the others. ChatGPT helped me sort the data to label them as "Native" or "Non-Native." The "ifelse" function is the hint from ChatGPT. This function tests the condition and labels the data from non_accent_bc as "Non-native" and any other data as "Native."
 
 ```{r}
 # Select Label and Prestige
 attrac_bc <- accent_bc |> 
   select(Label, Prestige)
+```
 
+```{r}
 # Define the mean value
 mean_prestige <- 3.466
+```
 
+```{r}
 # Label Prestige as "Bigger than Mean" or "Smaller than Mean"
 relabel_bc <- attrac_bc |> 
   mutate(Comparison_with_the_Mean = ifelse(Prestige > mean_prestige, 
-                                           "Bigger than Mean", 
+                                         "Bigger than Mean", 
                                            "Smaller than Mean")) |> 
   mutate(Comparison_with_the_Mean = as.factor(Comparison_with_the_Mean))
 relabel_bc
+```
 
-#Pie chart
+```{r}
+# Pie chart
 pie_bc <- relabel_bc |> 
   count(Comparison_with_the_Mean)
 ggplot(pie_bc, aes(x = " ", y = n, fill = Comparison_with_the_Mean)) +
@@ -170,27 +217,43 @@ ggplot(pie_bc, aes(x = " ", y = n, fill = Comparison_with_the_Mean)) +
   theme_classic() +
   theme_void() +
   scale_fill_manual(values = c("Bigger than Mean" = "lightblue", "Smaller than Mean" = "pink")) +
-  geom_text(aes(label = scales::percent(n / sum(n), accuracy = 0.1)), #Here, I had no idea of how to produce and visualize the percentage, so I asked ChatGPT.
-            position = position_stack(vjust = 0.5), size = 5, color = "black") +
+  geom_text(
+    aes(
+      label = paste0(Comparison_with_the_Mean, "\n", scales::percent(n / sum(n), accuracy = 0.1))
+    ), 
+    position = position_stack(vjust = 0.3), 
+    size = 3.3, 
+    color = "black"
+  ) +
   labs(title = "Distribution of Prestige Ratings", 
-       subtitle = "UK Accents Bishop and Coupland 2004", x = " ", y = " ")
+       subtitle = "UK Accents Bishop and Coupland 2004") +
+  theme(legend.position = " ")
 
 ```
 
 #### Pie Chart Description:
-In general, the pie chart reveals that only 32.4% of the accents' Prestige are above the mean value and 67.6% are below the mean. Since a larger proportion of accents are rated below the mean, this might suggest a prestige bias, where only a few accents are considered highly prestigious. 
+The pie chart reveals that only 32.4% of the accents' Prestige is above the mean value, and 67.6% is below the mean. Since more accents are rated below the mean, this might suggest a prestige bias, where only a few are considered highly prestigious. Also, I consulted ChatGPT to calculate the percentage of accents and how to label the percentage with text on the chart.
 
 ## 2.4 The Slope Graph
 
-This slope graph will investigate whether the attractiveness of non-native English accents increase from 2004 to 2019.
+This slope graph will investigate whether the attractiveness and prestige of non-native English accents both increased from 2004 to 2019.
 
 ```{r}
-library(tidyverse)
-accent_bc <- read_csv("datasets/uk_accents_bishop_coupland.csv")
+# Load the Library
+library(wesanderson)
+```
+
+```{r}
+# Load the Data
+accent_bc <- read_csv("/Users/vinnyhe/Desktop/R_Language/Vinny's_Data_Skills_Working_Project/datasets/uk_accents_bishop_coupland.csv")
 accent_bc
+
 accent_sha <- read_csv("datasets/uk_accents_sharma_et_al.csv")
 accent_sha
-#Non-native Accents Bishop
+```
+
+```{r}
+# Non-native Accents Bishop
 non_native_bc <- data.frame (
   Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
   Attractiveness = c(3.72, 3.21, 4.09, 3.2, 3.88),
@@ -201,71 +264,79 @@ accent_bc <- accent_bc |>
   mutate(Accent_Type = ifelse(Label %in% non_native_bc$Region, "Non-Native", "Native")) |> 
   mutate(Accent_Type = as.factor(Accent_Type))
 accent_bc
-#Non-native Accents Sharma
+```
+
+```{r}
+# Non-native Accents Sharma
 non_native_sha <- data.frame(
   Region = c("Afro-Caribbean", "Asian/Indian","Chinese", "French", "German", "MLE", "Spanish"),
   Attractiveness = c(4.02, 3.54, 3.5, 4.57, 3.77, 3.89, 4.42),
   Prestige = c(3.52, 3.38, 3.56, 4.56, 3.88, 3.81, 4.09)
 )
 non_native_sha
-#Non-native Accent Sharma
-accent_sha <- accent_sha |> 
-  mutate(Accent_Type = ifelse(Label %in% non_native_sha$Region, "Non-Native", "Native")) |> 
-  mutate(Accent_Type = as.factor(Accent_Type))
-accent_sha
-#Mutual Non-native Accent
+```
+
+```{r}
+# Mutual Non-native Accent
 mutual_non_native_accent <- data.frame (
   Region = c("Afro-Caribbean", "Asian/Indian", "French", "German", "Spanish"),
-  Attrac_SHA = c(4.02, 3.54, 4.57, 3.77, 4.42),
-  Year_SHA = c(2019, 2019, 2019, 2019, 2019),
-  Attrac_BC = c(3.72, 3.21, 4.09, 3.2, 3.88),
-  Year_BC = c(2004, 2004, 2004, 2004, 2004)
+  Attrac_2019 = c(4.02, 3.54, 4.57, 3.77, 4.42),
+  Pres_2019 = c(3.52, 3.38, 4.56, 3.88, 4.09),
+  Attrac_2004 = c(3.72, 3.21, 4.09, 3.2, 3.88),
+  Pres_2004 = c(2.9, 2.74, 3.74, 3.21, 3.29)
 )
 mutual_non_native_accent
-#Long Type Data
+```
+
+```{r}
+# Pivot Data
 mutual_long <- mutual_non_native_accent |> 
-  pivot_longer(cols = c(Attrac_SHA, Attrac_BC), 
-               names_to = "Attrac_Type", 
-               values_to = "Attractiveness") |> 
-  mutate(Year = ifelse(Attrac_Type == "Attrac_SHA", 2019, 2004))
+  pivot_longer(cols = c(Attrac_2019, Attrac_2004, Pres_2019, Pres_2004), 
+               names_to = "Type", 
+               values_to = "AttracPres") |> 
+  mutate(Year = ifelse(grepl("2019", Type), 2019, 2004),
+         Type = ifelse(grepl("Attrac", Type), "Attractiveness", "Prestige"))
 mutual_long
-#Slope Graph
+```
+
+```{r}
+# Slope Graph
 ggplot(data = mutual_long,
-       mapping = aes(x = Year, y = Attractiveness, group = Region, color = Region)) +
-  geom_line(linewidth = 0.8) +
-  geom_point(size = 2.5) +
-  geom_text(aes(label = round(Attractiveness, 2)), vjust = -0.8, size = 3.5) +
-  geom_text(data = mutual_long |> filter(Year == 2019), 
-            aes(label = Region), vjust = 1.5, hjust = 2.0, size = 3.5) +
+       mapping = aes(x = Year, y = AttracPres, group = interaction(Region, Type), 
+                     color = Region, linetype = Type)) +
+  geom_point(size = 1.2) +
+  geom_line(linewidth = 0.6) +
+  scale_x_continuous(breaks = c(2004, 2019), limits = c(2003, 2030)) +
+  geom_text(data = mutual_long |> filter(Year == 2019, Type == "Attractiveness"), aes(label = Region), hjust = 0, nudge_x = 0.5) +
+ scale_color_manual(values = wes_palette(n = 5, name = "Darjeeling1")) +  
   theme_classic() +
-  labs(title = "Attractiveness of Non-native UK Accents (2004 vs. 2019)",
+  theme(legend.position = "right") +
+  guides(color = "none") +
+  labs(title = "Attractiveness and Prestige of Non-native UK Accents (2004 vs. 2019)",
        subtitle = "Mutual Data from Bishop & Coupland and Sharma et al.",
-       x = "Year", y = "Attractiveness") +
-  scale_x_continuous(breaks = c(2004, 2019)) +
-  theme(legend.position = "none")
+       x = "Year", y = "Attractiveness and Prestige")
+```
+```{r}
+# Calculate the Slope
+mutual_non_native_accent$Slope_Attrac <- (mutual_non_native_accent$Attrac_2019 - mutual_non_native_accent$Attrac_2004) / 15
+mutual_non_native_accent$Slope_Pres <- (mutual_non_native_accent$Pres_2019 - mutual_non_native_accent$Pres_2004) / 15
 
-# Calculate the slope for each accent
-check_non_native_accent <- mutual_non_native_accent|> 
-  mutate(Slope = Attrac_SHA - Attrac_BC)
-
-#Find the accent with the slightest slope (Afro-Caribbean)
-slightest_slope <- check_non_native_accent |> 
-  filter(Slope == min(Slope))
-slightest_slope
-
-# Find the accent with the steepest slope (German)
-steepest_slope <- check_non_native_accent |> 
-  filter(Slope == max(Slope))
-steepest_slope
+mutual_non_native_accent
 ```
 
 #### Graph Description
-After glancing at the graph, there is no doubt that the attractiveness of the five non-native accents increased from 2004 to 2019. Also, the value of the German accent experienced the steepest change from 3.2 to 3.77. However, the attractiveness of the Afro-Caribbean accent did not rise considerably, and it moved from 3.72 to 4.02.
+After glancing at the graph, it is clear that the attractiveness and prestige of the five non-native accents both increased from 2004 to 2019. The attractiveness of the German accent experienced the steepest change, from 3.2 to 3.77. However, the attractiveness of the Afro-Caribbean accent did not rise considerably, moving from 3.72 to 4.02. Regarding prestige, the French accent also experienced the steepest change.
 
+# 3. Conclusion and References
 
-# 3. References
+## 3.1 Conclusion:
 
-## 3.1 Reference List
+In summary, I discovered that:
+1. There is a positive linear correlation between Attractiveness and Prestige.
+2. Among non-native accents, the French accent is relatively more prestigious than the others, and the Asian/Indian accent ranks at the bottom. Also, two-thirds of the accents are rated below the mean value.
+3. From 2004 to 2019, non-native accents' attractiveness and prestige rose.
+
+## 3.2 Reference List
 ```{r}
 #Indented Reference List
 ref1 <- paste("Coupland, N. and Bishop, H. (2007) ‘Ideologised values for British accents1’,",
