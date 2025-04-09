@@ -4442,7 +4442,7 @@ text-indent: 0 !important;
 <h2 class="anchored" data-anchor-id="the-scatter-plot">2.2 The Scatter Plot</h2>
 <p>The first research question is: Is there a strong correlation between an accent’s perceived attractiveness and prestige? The scatter plot below will answer this question, and an explanation of the plot will be presented.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Load the Library</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the Library</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>here() starts at /Users/vinnyhe/Desktop/R_Language/Vinny&#39;s_Data_Skills_Working_Project</code></pre>
@@ -4465,7 +4465,7 @@ text-indent: 0 !important;
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Load the data</span></span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the data</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>accent_bc <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;/Users/vinnyhe/Desktop/R_Language/Vinny&#39;s_Data_Skills_Working_Project/datasets/uk_accents_bishop_coupland.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 34 Columns: 4
@@ -4487,7 +4487,7 @@ dbl (3): Attractiveness, Prestige, Year
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the mean values</span></span>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the mean values</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>avg_x <span class="ot">&lt;-</span> <span class="fu">mean</span>(accent_bc<span class="sc">$</span>Attractiveness, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>avg_y <span class="ot">&lt;-</span> <span class="fu">mean</span>(accent_bc<span class="sc">$</span>Prestige, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -4501,7 +4501,7 @@ dbl (3): Attractiveness, Prestige, Year
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Set quadrants</span></span>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set quadrants</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>accent_bc<span class="sc">$</span>quadrant <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(accent_bc<span class="sc">$</span>Attractiveness <span class="sc">&gt;</span> avg_x <span class="sc">&amp;</span> accent_bc<span class="sc">$</span>Prestige <span class="sc">&gt;</span> avg_y, <span class="st">&quot;I&quot;</span>,</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">ifelse</span>(accent_bc<span class="sc">$</span>Attractiveness <span class="sc">&lt;</span> avg_x <span class="sc">&amp;</span> accent_bc<span class="sc">$</span>Prestige <span class="sc">&gt;</span> avg_y, <span class="st">&quot;II&quot;</span>,</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">ifelse</span>(accent_bc<span class="sc">$</span>Attractiveness <span class="sc">&lt;</span> avg_x <span class="sc">&amp;</span> accent_bc<span class="sc">$</span>Prestige <span class="sc">&lt;</span> avg_y, <span class="st">&quot;III&quot;</span>, <span class="st">&quot;IV&quot;</span>)))</span>
@@ -4509,7 +4509,7 @@ dbl (3): Attractiveness, Prestige, Year
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>accent_bc<span class="sc">$</span>quadrant <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(accent_bc<span class="sc">$</span>quadrant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Scatter plot</span></span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> accent_bc, </span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Attractiveness, <span class="at">y =</span> Prestige, <span class="at">color =</span> quadrant)</span>
