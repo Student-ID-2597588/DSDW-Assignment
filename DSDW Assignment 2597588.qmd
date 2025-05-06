@@ -85,12 +85,12 @@ ggplot(
   geom_hline(yintercept = avg_y, linetype = "dashed", color = "pink", linewidth = 0.9) +
   theme_classic() +
   geom_smooth(method = "lm", se = FALSE, color = "#666666", alpha = 0.5, linewidth = 0.8) +
-  labs(x = "Attractiveness", y = "Prestige", subtitle = "UK Accents Coupland and Bishop 2004") +
+  labs(x = "Attractiveness", y = "Prestige", subtitle = "UK Accents Coupland and Bishop 2004", , caption = "The distribution of dots shows a positive correlation") +
   ggtitle("The Correlation Between Attractiveness and Prestige") +
   scale_color_manual(values = c("I" = "#FF0066", "II" = "#009999", "III" = "#999900", "IV" = "#9900FF")) +
   theme(legend.position = "none") +
-  annotate("text", x = 3.4, y = 5.0, label = "The distribution of dots shows a positive correlation.", 
-           color = "black", size = 3.2, hjust = 0.55)
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5), plot.subtitle = element_text(hjust = 0.5))
 ```
 
 ```{r}
@@ -153,8 +153,9 @@ ggplot(
   theme(legend.position = "none",
         axis.line.y = element_blank(), axis.line.x = element_blank(), axis.ticks = element_blank()) +
   scale_fill_manual(values = c("skyblue", "#CC99CC")) +
-  scale_y_continuous(breaks = seq(0, 5, by = 1))
-
+  scale_y_continuous(breaks = seq(0, 5, by = 1)) +
+  theme(
+    plot.title = element_text(size = 16.5, face = "bold", hjust = 0.5), plot.subtitle = element_text(hjust = 0.5))
 ```
 
 ```{r}
@@ -227,8 +228,9 @@ ggplot(pie_bc, aes(x = " ", y = n, fill = Comparison_with_the_Mean)) +
   ) +
   labs(title = "Distribution of Prestige Ratings", 
        subtitle = "UK Accents Bishop and Coupland 2004") +
-  theme(legend.position = " ")
-
+  theme(legend.position = " ") +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5), plot.subtitle = element_text(size = 8.5, hjust = 0.5))
 ```
 
 #### Pie Chart Description:
@@ -248,7 +250,7 @@ library(wesanderson)
 accent_bc <- read_csv("/Users/vinnyhe/Desktop/R_Language/Vinny's_Data_Skills_Working_Project/datasets/uk_accents_bishop_coupland.csv")
 accent_bc
 
-accent_sha <- read_csv("datasets/uk_accents_sharma_et_al.csv")
+accent_sha <- read_csv("/Users/vinnyhe/Desktop/R_Language/Vinny's_Data_Skills_Working_Project/datasets/uk_accents_sharma_et_al.csv")
 accent_sha
 ```
 
@@ -314,8 +316,11 @@ ggplot(data = mutual_long,
   guides(color = "none") +
   labs(title = "Attractiveness and Prestige of Non-native UK Accents (2004 vs. 2019)",
        subtitle = "Mutual Data from Bishop & Coupland and Sharma et al.",
-       x = "Year", y = "Attractiveness and Prestige")
+       x = "Year", y = "Attractiveness and Prestige") +
+  theme(
+    plot.title = element_text(size = 10.5, face = "bold", hjust = 0.5), plot.subtitle = element_text(hjust = 0.5))
 ```
+
 ```{r}
 # Calculate the Slope
 mutual_non_native_accent$Slope_Attrac <- (mutual_non_native_accent$Attrac_2019 - mutual_non_native_accent$Attrac_2004) / 15
