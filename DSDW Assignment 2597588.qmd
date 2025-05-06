@@ -21,7 +21,7 @@
 
 In this study, I will investigate the correlation between attractiveness and prestige in UK accents. The motivation for this study is due to my personal experience as an international student studying in the UK. As a native Mandarin Chinese speaker, I have a Chinese accent when speaking English, and this minority accent brought me obstacles when socializing with others. Some people would not be willing to talk to me too much when meeting for the first time after realizing my accent, while they prefer to speak with other Asian students who sound more British or American. Thus, it is likely my less attractive accent is causing this issue. In this case, I would like to research to examine whether there is a strong relationship between attractiveness and prestige in UK accents.
 
-This study will mainly answer three research questions: Is there a strong correlation between an accent’s perceived attractiveness and prestige? Are native English accents more prestigious than non-native English accents? And did the attractiveness and prestige of non-native English accents both increase from 2004 to 2019? 
+This study will mainly answer three research questions: 1. Is there a strong correlation between an accent’s perceived attractiveness and prestige? 2. Are native English accents more prestigious than non-native English accents? 3. Did the attractiveness and prestige of non-native English accents both increase from 2004 to 2019? 
 
 This study will use two datasets: UK accents bishop Coupland and UK accents Sharma et al. These two datasets are provided by my module leader. One was collected by Bishop and Coupland in 2004, and the other was gathered by Sharma and her colleagues in 2019. The former covers 34 and 38 different accents, and most are overlapped in both datasets. I selected these two datasets because they share most of the accents. Since they were collected in 2004 and 2019, there could be changes in the data pattern that are worth analyzing. Moreover, before initiating the research, I read Bishop and Coupland’s journal article (2007). I discovered that Bishop and Coupland researched UK accents’ prestige and attractiveness and emphasized that British society still holds strong stereotypes about accents, but these perceptions are slowly evolving. The role of gender, region, and attitudes toward diversity indicates that language ideologies may be changing over time. Additionally, Sharma et al. (2020) found that attitudes towards British accents remain unchanged from 50 years ago, and Received Pronunciation (RP) is most favored in a professional context. Based on these findings, I will build up my research and visualize the data more vividly and practically.
 
@@ -108,7 +108,8 @@ quadrant_counts <- accent_bc |>
 quadrant_counts
 ```
 
-#### Plot Description:
+#### **Plot Description:**
+This scatter plot divides accents into four quadrants based on their attractiveness and prestige scores. Accents in the top-right quadrant are highly rated on both dimensions (e.g., RP and Scottish), while those in the bottom-left (e.g., Asian/Indian) are rated poorly. This helps identify how prestige and attractiveness align.
 The dots illustrate a positive correlation: as the level of attractiveness increases, prestige also rises. The horizontal and vertical lines divide the plot into four quadrants, with the dots colored differently in each quadrant. There are 10 dots in Quadrant I, one in Quadrant II, 17 in Quadrant III, and six in Quadrant IV. I did this because it is easier for readers to visualize the distribution of dots in each quadrant. The distribution pattern could also inspire a new study on why most dots cluster in Quadrants I and III.
 
 ## 2.3 The Bar Chart and Pie Chart
@@ -184,7 +185,8 @@ prestige_smaller_than_2.9 <- native_bc |>
 prestige_smaller_than_2.9
 ```
 
-#### Bar Chart Description:
+#### **Bar Chart Description:**
+This bar chart displays the prestige scores for each accent in 2019, sorted from lowest to highest. Traditional UK accents such as Queen's English and Scottish rank highest, whereas non-native accents such as Asian/Indian and Afro-Caribbean appear towards the bottom. This highlights an enduring prestige hierarchy in British society.
 According to the bar chart, it can be concluded that most native English accents hold more prestige than the Asian/Indian and Afro-Caribbean accents, with the French accent being relatively high in prestige compared to the others. ChatGPT helped me sort the data to label them as "Native" or "Non-Native." The "ifelse" function is the hint from ChatGPT. This function tests the condition and labels the data from non_accent_bc as "Non-native" and any other data as "Native."
 
 ```{r}
@@ -233,7 +235,8 @@ ggplot(pie_bc, aes(x = " ", y = n, fill = Comparison_with_the_Mean)) +
     plot.title = element_text(face = "bold", hjust = 0.5), plot.subtitle = element_text(size = 8.5, hjust = 0.5))
 ```
 
-#### Pie Chart Description:
+#### **Pie Chart Description:**
+This pie chart categorises accents into those rated above or below the mean prestige score. It provides a quick visual summary of the number of accents perceived as prestigious. 
 The pie chart reveals that only 32.4% of the accents' Prestige is above the mean value, and 67.6% is below the mean. Since more accents are rated below the mean, this might suggest a prestige bias, where only a few are considered highly prestigious. Also, I consulted ChatGPT to calculate the percentage of accents and how to label the percentage with text on the chart.
 
 ## 2.4 The Slope Graph
@@ -329,13 +332,15 @@ mutual_non_native_accent$Slope_Pres <- (mutual_non_native_accent$Pres_2019 - mut
 mutual_non_native_accent
 ```
 
-#### Graph Description
+#### **Graph Description:**
+This slope graph compares how the perceived prestige of each accent changed between 2004 and 2019. While most accents show a modest rise, the relative position of non-native accents has not substantially improved. RP retains its dominant status, reaffirming long-standing social preferences.
 After glancing at the graph, it is clear that the attractiveness and prestige of the five non-native accents both increased from 2004 to 2019. The attractiveness of the German accent experienced the steepest change, from 3.2 to 3.77. However, the attractiveness of the Afro-Caribbean accent did not rise considerably, moving from 3.72 to 4.02. Regarding prestige, the French accent also experienced the steepest change.
 
 # 3. Conclusion and References
 
 ## 3.1 Conclusion:
 
+This study reveals that accent-based inequalities in Britain remain deeply embedded. Accents traditionally associated with elite or professional status. Although non-native accents have seen slight improvements in perception over time, they still fall below native varieties, particularly in professional or academic contexts.
 In summary, I discovered that:
 1. There is a positive linear correlation between Attractiveness and Prestige.
 2. Among non-native accents, the French accent is relatively more prestigious than the others, and the Asian/Indian accent ranks at the bottom. Also, two-thirds of the accents are rated below the mean value.
